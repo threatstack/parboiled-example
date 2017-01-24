@@ -1,0 +1,9 @@
+.idea/
+target/
+lib_managed/
+project/boot/
+.cache
+application.conf
+.DS_Store
+*/.DS_Store
+.DS_Store?

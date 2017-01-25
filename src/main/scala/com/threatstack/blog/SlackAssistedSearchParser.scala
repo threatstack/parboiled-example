@@ -54,10 +54,9 @@ class DateParser(val input: ParserInput) extends Parser {
   def Month: Rule1[Int] = Digit2
   def Year: Rule1[Int] = Digit4
 
-  def Digit2: Rule1[Int] = rule(capture(2.times(Digit)) ~> toInt _)
-  def Digit4: Rule1[Int] = rule(capture(4.times(Digit)) ~> toInt _)
+  def Digit2: Rule1[Int] = rule(capture(2.times(Digit)) ~> ((_: String).toInt))
+  def Digit4: Rule1[Int] = rule(capture(4.times(Digit)) ~> ((_: String).toInt))
 
-  private def toInt(string: String): Int = string.toInt
   private def dateTime(month: Int, day: Int, year: Int): DateTime =
     new DateTime(year, month, day, 0, 0, 0)
 }

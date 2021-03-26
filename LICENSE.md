@@ -1,4 +1,5 @@
 Copyright (c) 2017-2021 Threat Stack, Inc.
+
 Author: Ryan Plessner
 
 Permission is hereby granted, free of charge, to any person obtaining a

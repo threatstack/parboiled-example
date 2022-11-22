@@ -1,3 +1,6 @@
+// Copyright 2017-2022 F5 Inc.
+// Licensed under the MIT license; see LICENSE.md for more information.
+
 package com.threatstack.blog
 
 import org.joda.time.DateTime
